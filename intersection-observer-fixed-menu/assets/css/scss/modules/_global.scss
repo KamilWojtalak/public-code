@@ -1,0 +1,12 @@
+* {
+  // reset default browser styling
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section,
+.header {
+  // give sections height to make them visible
+  min-height: 100vh;
+}
