@@ -1,0 +1,63 @@
+* {
+  // reset default browser styling
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  .header__nav {
+    // Line logo and menu container
+    display: flex;
+    justify-content: space-between;
+
+    // highlight nav
+    padding: 30px;
+    background-color: rgba(204, 204, 204, 0.357);
+
+    &_fixed {
+      // Fix menu
+      position: fixed;
+      top: 0;
+
+      // if this not happen it will not be full length
+      width: 100%;
+    }
+    .nav__logo {
+      // center text vertically
+      display: flex;
+      align-items: center;
+    }
+
+    .nav__menu-list {
+      // line menu list items
+      display: flex;
+      justify-content: space-between;
+
+      // reset default list style
+      list-style-type: none;
+      .menu-list__item {
+        .menu-list__link {
+          // give 'a' tag more space to be clickable
+          display: inline-block;
+          padding: 7px 15px;
+
+          // reset default formating
+          color: initial;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.section,
+.header {
+  // give sections height to make them visible
+  min-height: 100vh;
+}
+
+.section {
+  // show where new section begins
+  border-top: 3px solid #ccc;
+}
